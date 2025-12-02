@@ -1,0 +1,24 @@
+body {
+  padding-top: 55px;
+}
+
+
+/* LOGO — Desktop / Default */
+.navbar-logo {
+  height: 48px;        /* desktop size */
+  width: auto;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 34px;      /* mobile size */
+  }
+}
+
+/* Extra small devices */
+@media (max-width: 480px) {
+  .navbar-logo {
+    height: 30px;
+  }
+}

@@ -1,0 +1,68 @@
+.course-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2000;
+  animation: fadeIn 0.2s ease;
+}
+
+.course-box {
+  background: #fff;
+  padding: 30px;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 18px;
+  position: relative;
+  animation: slideUp 0.25s ease;
+  text-align: center;
+}
+
+.course-close {
+  position: absolute;
+  right: 14px;
+  top: 10px;
+  font-size: 28px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.course-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.course-text {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.course-btn {
+  display: inline-block;
+  background: #0088cc;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+.course-btn:hover {
+  opacity: 0.9;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}

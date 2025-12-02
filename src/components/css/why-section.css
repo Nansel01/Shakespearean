@@ -1,0 +1,18 @@
+.why-section {
+  background: #fafafa;
+  border-radius: 20px;
+  padding: 60px 25px;
+}
+
+.why-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.why-text {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  margin-bottom: 20px;
+  color: #333;
+}

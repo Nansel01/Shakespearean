@@ -1,0 +1,39 @@
+.contact-section {
+  background-color: #f7f9fc;
+}
+
+.contact-info {
+  background: linear-gradient(135deg, #007bff, #0056d2);
+}
+
+.form-control,
+.form-select,
+textarea {
+  border-radius: 0.6rem !important;
+}
+
+.btn-primary {
+  background-color: #0056d2;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #003c9e;
+}
+
+/* Animation (CSS-only if AOS is not installed) */
+.contact-section .container {
+  animation: fadeUp 0.8s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+}

@@ -1,0 +1,93 @@
+.teacher-card {
+  border-radius: 20px;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #eee;
+}
+
+.teacher-photo {
+  width: 100%;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 18px;
+}
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);   /* ✔ Add blur to background */
+  -webkit-backdrop-filter: blur(6px); /* Safari support */
+  z-index: 90;
+}
+
+
+
+.modal-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 550px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 22px;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+  z-index: 100;
+  max-height: 85%;
+  overflow-y: auto;
+}
+
+.close-btn {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Certificates grid */
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 15px;
+}
+
+.cert-thumbnail {
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* Lightbox */
+.lightbox-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lightbox-image {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 12px;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  font-size: 32px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}

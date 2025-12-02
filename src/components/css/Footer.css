@@ -1,0 +1,27 @@
+.footer {
+  width: 100%;
+}
+
+
+.footer-link {
+  color: #ddd;
+  text-decoration: none;
+}
+
+.footer-link:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Logo in footer */
+.footer-logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .footer-logo {
+    height: 40px;
+  }
+}
